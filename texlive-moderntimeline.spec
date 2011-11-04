@@ -1,3 +1,9 @@
+# revision 24193
+# category Package
+# catalog-ctan /macros/latex/contrib/moderntimeline
+# catalog-date 2011-10-04 11:31:57 +0200
+# catalog-license lppl1.3
+# catalog-version 0.4
 Name:		texlive-moderntimeline
 Version:	0.4
 Release:	1
@@ -44,6 +50,7 @@ Curriculum Vitae documents written using the moderncv class.
 #- source
 %doc %{_texmfdistdir}/source/latex/moderntimeline/moderntimeline.dtx
 %doc %{_texmfdistdir}/source/latex/moderntimeline/moderntimeline.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ Curriculum Vitae documents written using the moderncv class.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
