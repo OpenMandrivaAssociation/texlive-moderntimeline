@@ -1,12 +1,12 @@
-# revision 24607
+# revision 25132
 # category Package
 # catalog-ctan /macros/latex/contrib/moderntimeline
-# catalog-date 2011-11-15 14:52:50 +0100
+# catalog-date 2012-01-17 10:30:09 +0100
 # catalog-license lppl1.3
-# catalog-version 0.5
+# catalog-version 0.6
 Name:		texlive-moderntimeline
-Version:	0.5
-Release:	2
+Version:	0.6
+Release:	1
 Summary:	Timelines for use with moderncv
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderntimeline
