@@ -50,3 +50,29 @@ Curriculum Vitae documents written using the moderncv class.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6-2
++ Revision: 804945
+- Update to latest release.
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6-1
++ Revision: 762670
+- Update to latest upstream package
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5-2
++ Revision: 754092
+- Rebuild to reduce used resources
+
+* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.5-1
++ Revision: 732601
+- texlive-moderntimeline
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4-1
++ Revision: 719053
+- texlive-moderntimeline
+- texlive-moderntimeline
+- texlive-moderntimeline
+- texlive-moderntimeline
+
