@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 0.6
 Name:		texlive-moderntimeline
-Version:	0.6
-Release:	10
+Version:	0.9
+Release:	1
 Summary:	Timelines for use with moderncv
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderntimeline
