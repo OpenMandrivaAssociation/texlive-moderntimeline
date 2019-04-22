@@ -5,7 +5,7 @@
 # catalog-license lppl1.3
 # catalog-version 0.6
 Name:		texlive-moderntimeline
-Version:	0.9
+Version:	0.10
 Release:	1
 Summary:	Timelines for use with moderncv
 Group:		Publishing
