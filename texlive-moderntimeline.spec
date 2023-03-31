@@ -1,6 +1,6 @@
 Name:		texlive-moderntimeline
 Version:	55518
-Release:	1
+Release:	2
 Summary:	Timelines for use with moderncv
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderntimeline
