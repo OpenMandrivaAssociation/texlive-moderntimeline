@@ -3,7 +3,7 @@ Version:	55518
 Release:	2
 Summary:	Timelines for use with moderncv
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderntimeline
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/moderntimeline
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.doc.r%{version}.tar.xz
