@@ -1,45 +1,23 @@
-Name:		texlive-moderntimeline
-Version:	55518
-Release:	2
+%global tl_name moderntimeline
+%global tl_revision 55518
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.11
+Release:	%{tl_revision}.1
 Summary:	Timelines for use with moderncv
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/moderntimeline
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.source.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/moderntimeline.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package provides commands to configure and to draw time
-line diagrams; such diagrams are designed to fit into
-Curriculum Vitae documents written using the moderncv class.
+The package provides commands to configure and to draw time line
+diagrams; such diagrams are designed to fit into Curriculum Vitae
+documents written using the moderncv class.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/moderntimeline
-%doc %{_texmfdistdir}/doc/latex/moderntimeline
-#- source
-%doc %{_texmfdistdir}/source/latex/moderntimeline
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
